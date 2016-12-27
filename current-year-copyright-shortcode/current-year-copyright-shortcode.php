@@ -58,7 +58,7 @@ add_shortcode('current_year_with_copyright', 'get_current_year_with_copyright_sy
 function get_current_year_with_copyright_symbol_and_title() {
 	$current_date = getdate();
 	$site_title = get_bloginfo( 'name' );
-	return  $site_title .' &copy '.$current_date[year];
+	return  ' &copy '.$current_date[year].' '.$site_title;
 	}
 
 add_shortcode('current_year_with_copyright_and_title', 'get_current_year_with_copyright_symbol_and_title');
