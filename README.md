@@ -1,0 +1,1 @@
+# Current_year_copyright_shortcode
