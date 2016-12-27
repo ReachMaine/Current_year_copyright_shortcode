@@ -7,7 +7,7 @@
 /*
 Plugin Name:Current Year Copyright Shortcode
 
-Description: This plugin will assist you to keep your website copyright date updated by adding the current year where you use the shortcode.
+Description: This plugin adds [current_year], [current_year_with_copyright] and [current_year_with_copyright_and_title] shortcodes.  Useful for keeping your website copyright date current.
 Author: zig, based on similar plugin by Deepak Kumar Vellingiri
 Version: 0.1
 
