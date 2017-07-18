@@ -2,7 +2,7 @@
 Contributors: zig, based on Dynamic Year and Copyright Shortcode by Deepak Kumar Vellingiri
 Tags: copyright shortcode, dynamic copyright year, year shortcode, updated copyright year, automatic copyright year, current year, copyright symbol
 Tested up to: 4.3.1
-Stable tag: 0.1.1
+Stable tag: 0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
