@@ -19,7 +19,7 @@ add_action( 'plugins_loaded', 'current_year_copyright_shortcode_load_textdomain'
 /**
  * Load plugin textdomain.
  *
- * @since 0.1.1
+ * @since 0.1.2
  */
 function current_year_copyright_shortcode_load_textdomain() {
   load_plugin_textdomain( 'current-year-copyright-shortcode', false, plugin_basename( dirname( __FILE__ ) ) . '/languages' );
@@ -33,7 +33,7 @@ function current_year_copyright_shortcode_load_textdomain() {
 
 function get_current_year() {
 	$current_date = getdate();
-	return $current_date[year];
+	return $current_date['year'];
 	}
 
 add_shortcode('current_year', 'get_current_year');
