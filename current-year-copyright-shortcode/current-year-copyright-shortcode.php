@@ -1,7 +1,7 @@
 <?php
 /**
  * @package Current_Year_Copyright_Shortcode
- * @version 0.1.1
+ * @version 0.1.2
  */
 
 /*
@@ -9,7 +9,7 @@ Plugin Name:Current Year Copyright Shortcode
 
 Description: This plugin adds [current_year], [current_year_with_copyright] and [current_year_with_copyright_and_title] shortcodes.  Useful for keeping your website copyright date current.
 Author: zig, based on similar plugin by Deepak Kumar Vellingiri
-Version: 0.1
+Version: 0.1.2
 
 */
 
@@ -45,7 +45,7 @@ add_shortcode('current_year', 'get_current_year');
  */
 function get_current_year_with_copyright_symbol() {
 	$current_date = getdate();
-	return 	'&copy '.$current_date[year];
+	return 	'&copy; '.$current_date["year"];
 	}
 
 add_shortcode('current_year_with_copyright', 'get_current_year_with_copyright_symbol');
@@ -58,7 +58,7 @@ add_shortcode('current_year_with_copyright', 'get_current_year_with_copyright_sy
 function get_current_year_with_copyright_symbol_and_title() {
 	$current_date = getdate();
 	$site_title = get_bloginfo( 'name' );
-	return  ' &copy '.$current_date[year].' '.$site_title;
+	return  ' &copy; '.$current_date["year"].' '.$site_title;
 	}
 
 add_shortcode('current_year_with_copyright_and_title', 'get_current_year_with_copyright_symbol_and_title');
